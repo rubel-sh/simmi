@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./LoadingSpinner.module.css";
-const LoadingSpinner = () => {
+const LoadingSpinner = ({ className }) => {
   return (
-    <div className={styles.loaderWrapper}>
+    <div className={`${styles.loaderWrapper} ${className}`}>
       <div className={styles.loader}>
         <div className={`${styles.square1} ${styles.position}`}></div>
         <div class={`${styles.square2} ${styles.position}`}></div>
