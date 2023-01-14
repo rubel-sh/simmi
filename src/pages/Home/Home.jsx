@@ -1,12 +1,12 @@
 import React from "react";
 import BannerSection from "./BannerSection/BannerSection";
-import ListItemsSection from "./ListItemsSection/ListItemsSection";
+import EquipmentsSection from "./EquipmentsSection/EquipmentsSection";
 
 const Home = () => {
   return (
     <>
       <BannerSection />
-      <ListItemsSection />
+      <EquipmentsSection />
     </>
   );
 };

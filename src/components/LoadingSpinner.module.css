@@ -1,0 +1,110 @@
+.loaderWrapper {
+  /* width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff; */
+  display: grid;
+  place-items: center;
+  perspective: 400px;
+}
+
+.loader {
+  /* width: 4em;
+    height: 4em; */
+  border-radius: 100%;
+  /* margin: 50px auto;
+    border: 1.1em solid rgba(255, 255, 255, 0.2);
+    border-left-color: #fff; */
+  width: 100px;
+  height: 100px;
+  background-color: rgba(22, 22, 22, 0);
+  animation: outerRotate 2s ease-in-out infinite;
+}
+.position {
+  position: absolute;
+}
+
+.square1 {
+  width: 50px;
+  height: 50px;
+  transform: translateX(0px);
+  background-color: #ffea20;
+  animation: square1 1s ease-in-out infinite;
+}
+.square2 {
+  width: 50px;
+  height: 50px;
+  transform: translateX(25px);
+  background-color: #ffea20;
+  animation: square2 1s ease-in-out infinite;
+}
+.square3 {
+  width: 50px;
+  height: 50px;
+  transform: translateY(25px);
+  background-color: #ffea20;
+  animation: square3 1s ease-in-out infinite;
+}
+.square4 {
+  width: 50px;
+  height: 50px;
+  transform: translate(25px, 25px);
+  background-color: #ffea20;
+  animation: square4 1s ease-in-out infinite;
+}
+
+/*KeyFrames*/
+@keyframes square1 {
+  0%,
+  100% {
+    transform: translate(0px, 0px);
+  }
+  70% {
+    transform: translate(-25px, -25px);
+    border-radius: 50%;
+  }
+}
+@keyframes square2 {
+  0%,
+  100% {
+    transform: translate(50px, 0px);
+  }
+  70% {
+    transform: translate(75px, -25px);
+    border-radius: 50%;
+  }
+}
+@keyframes square3 {
+  0%,
+  100% {
+    transform: translate(0px, 50px);
+  }
+  70% {
+    transform: translate(-25px, 75px);
+    border-radius: 50%;
+  }
+}
+@keyframes square4 {
+  0%,
+  100% {
+    transform: translate(50px, 50px);
+  }
+  70% {
+    transform: translate(75px, 75px);
+    border-radius: 50%;
+  }
+}
+@keyframes outerRotate {
+  0%,
+  100% {
+    transform: rotate3d(0, 0, 0, 360deg);
+  }
+  20% {
+    transform: rotate3d(1, -1, 0, 180deg);
+  }
+  40% {
+    transform: rotate3d(1, 1, 0, 180deg);
+  }
+}
