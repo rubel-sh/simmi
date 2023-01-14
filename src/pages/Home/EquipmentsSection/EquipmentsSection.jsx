@@ -36,7 +36,7 @@ const EquipmentsSection = () => {
           // Each Card
           <div
             key={equip._id}
-            className="hover:shadow-md transition-all duration-300 p-5 rounded-md"
+            className="hover:shadow-md transition-all duration-300 bg-slate-50 border rounded-xl p-5"
           >
             <img
               src={equip.image}
