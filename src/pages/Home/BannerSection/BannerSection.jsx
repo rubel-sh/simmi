@@ -9,11 +9,11 @@ import "swiper/css/pagination";
 // import required modules
 import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from "swiper";
 // Images for banner
-import cover_image_1 from "../../../assets/images/banner_image_1.jpg";
-import cover_image_2 from "../../../assets/images/banner_image_2.jpg";
-import cover_image_3 from "../../../assets/images/banner_image_3.jpg";
-import cover_image_4 from "../../../assets/images/banner_image_4.jpg";
-import cover_image_5 from "../../../assets/images/banner_image_5.jpg";
+import cover_image_1 from "../../../assets/images/banner_image_1-min.jpg";
+import cover_image_2 from "../../../assets/images/banner_image_2-min.jpg";
+import cover_image_3 from "../../../assets/images/banner_image_3-min.jpg";
+import cover_image_4 from "../../../assets/images/banner_image_4-min.jpg";
+import cover_image_5 from "../../../assets/images/banner_image_5-min.jpg";
 
 const coverImages = [
   cover_image_1,
