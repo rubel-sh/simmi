@@ -1,5 +1,9 @@
 ### React.js Assignment test for SIMMI Foundation
 
+## Live
+
+https://simmi-argo.netlify.app/
+
 ## Installations
 
 - Clone the Repo "git clone https://github.com/rubel-sh/simmi"
