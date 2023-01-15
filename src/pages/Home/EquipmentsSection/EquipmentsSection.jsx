@@ -31,12 +31,12 @@ const EquipmentsSection = () => {
   return (
     <Container>
       {/* Render all equipments */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 md:gap-5 lg:gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10">
         {equipments.map((equip) => (
           // Each Card
           <div
             key={equip._id}
-            className="hover:shadow-md transition-all duration-300 bg-slate-50 border rounded-xl p-5"
+            className="hover:drop-shadow-md transition-all duration-300 border  rounded-xl p-5 relative overflow-hidden pb-14"
           >
             <img
               src={equip.image}
@@ -46,8 +46,8 @@ const EquipmentsSection = () => {
             <h2 className="text-2xl font-medium mb-2">{equip.title}</h2>
             <p className="md:text-md">{limitDescription(equip.description)}</p>
             <Link className="" to={`/equipments/${equip._id}`}>
-              <button className="bg-slate-200 px-4 py-2 rounded-lg mt-4">
-                Details
+              <button className="bg-yellow-500 hover:bg-yellow-400 transition-all text-white font-bold uppercase px-4 py-3  absolute bottom-0 left-0 w-full">
+                Learn More
               </button>
             </Link>
           </div>
