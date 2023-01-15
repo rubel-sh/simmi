@@ -20,24 +20,24 @@ const About = () => {
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
         <div className="bg-slate-100 border rounded-xl p-5">
-          <h2 className="text-xl font-bold text-slate-800 mb-4">
+          <h2 className="text-2xl font-medium text-slate-800 mb-4">
             Technologies
           </h2>
           <ol style={{ listStyleType: "diamond" }} className="ml-5">
             <li>Vite/React.js</li>
             <li>React Router Dom V6</li>
             <li>Tailwindcss</li>
+            <li>Swipper</li>
             <li>Backend: Express,MongoDB, Node</li>
           </ol>
         </div>
         <div className="bg-slate-100 border rounded-xl p-5">
-          <h2 className="text-xl font-bold text-slate-800 mb-4">
+          <h2 className="text-2xl font-medium text-slate-800 mb-4">
             Installations
           </h2>
           <ol style={{ listStyleType: "diamond" }} className="ml-5 ">
             <li>
-              Clone the Repo https://github.com/rubel-sh/simmi using "git clone
-              [url]"
+              Clone the Repo "git clone https://github.com/rubel-sh/simmi"
             </li>
             <li>open terminal in simmi </li>
             <li>yarn / npm install</li>

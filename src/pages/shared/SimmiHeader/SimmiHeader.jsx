@@ -121,7 +121,7 @@ const SimmiHeader = () => {
                     </li>
                     <li>
                       <NavLink
-                        to="/"
+                        to="/about"
                         aria-label="Our product"
                         title="Our product"
                         className="text-slate-800 font-medium tracking-wide  transition-colors duration-200 hover:text-yellow-400"
