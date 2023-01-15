@@ -15,15 +15,15 @@ const Profile = () => {
           <h2 className="text-2xl font-medium text-slate-800 mb-4">About Me</h2>
           <p>
             Hi!,{" "}
-            <span className="text-yellow-600 font-bold">I'm Rubel Hossain</span>
+            <span className="text-yellow-700 font-bold">I'm Rubel Hossain</span>
             . I'm passionate about Web Development ever since I started loving
             playing around with CSS and creating creative designs. Recently I've
             completed{" "}
-            <span className="text-yellow-600 font-bold">
+            <span className="text-yellow-700 font-bold">
               "Complete Web Development"
             </span>{" "}
             course from{" "}
-            <span className="text-yellow-600 font-bold">
+            <span className="text-yellow-700 font-bold">
               "Programming Hero"
             </span>{" "}
             with an excellent performance.
@@ -31,7 +31,7 @@ const Profile = () => {
         </div>
         <div className="bg-slate-100 border rounded-xl p-5">
           <h2 className="text-2xl font-medium text-slate-800 mb-4">Contact</h2>
-          <ul className="font-medium">
+          <ul className="font-medium flex flex-col gap-1">
             <li className="flex items-center gap-2">
               <FiMail className="text-lg text-yellow-700" />{" "}
               rubel.hossain0649@gmail.com
