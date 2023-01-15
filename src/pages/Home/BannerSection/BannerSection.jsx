@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 // import required modules
-import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
+import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from "swiper";
 // Images for banner
 import cover_image_1 from "../../../assets/images/banner_image_1.jpg";
 import cover_image_2 from "../../../assets/images/banner_image_2.jpg";
@@ -35,13 +35,21 @@ const BannerSection = () => {
           pagination={true}
           mousewheel={true}
           keyboard={true}
-          modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          modules={[Autoplay, Navigation, Pagination, Mousewheel, Keyboard]}
           className="mySwiper"
         >
           {/* Iterate through all images */}
           {coverImages.map((image) => (
             <SwiperSlide key={image}>
-              <img src={image} alt={image} />
+              <img
+                src={image}
+                alt={image}
+                className="max-h-[400px] object-cover"
+              />
             </SwiperSlide>
           ))}
         </Swiper>
